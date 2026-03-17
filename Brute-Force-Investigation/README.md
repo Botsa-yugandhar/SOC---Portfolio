@@ -27,3 +27,7 @@ If more than 5 failed login attempts occur from the same IP within 5 minutes, tr
 - Block the attacking IP
 - Reset affected account passwords
 - Enable Multi-Factor Authentication
+
+## Screenshots
+### Failed Login Attempts ( Event ID 4625 ) 
+![Failed  Logins](screenshots/4625.png)
