@@ -25,13 +25,24 @@ A phishing email containing a malicious attachment was delivered to the user. Th
 
 ---
 
+## Attack Chain Analysis
+
+1. A phishing email with a macro-enabled attachment (.docm) was delivered to the user.
+2. The user opened the attachment using Microsoft Word (winword.exe).
+3. The document triggered PowerShell execution with encoded commands (-enc).
+4. PowerShell established an external network connection to a suspicious IP address.
+5. Antivirus detected a Trojan related to the executed file.
+
+This sequence confirms a full phishing attack leading to malware execution and potential system compromise.
+
 ## Key Findings
 
-- Suspicious email with macro-enabled attachment (.docm)
-- User executed attachment using Word
-- PowerShell executed with encoded command
-- External connection to suspicious IP
-- Antivirus detected Trojan
+- Phishing email delivered with macro-enabled attachment (.docm)
+- User execution of attachment triggered Word process
+- Word process spawned PowerShell with encoded commands (-enc)
+- Encoded PowerShell indicates obfuscated malicious activity
+- External network connection suggests possible command & control (C2)
+- Antivirus detection confirms presence of Trojan malware
 
 ---
 
