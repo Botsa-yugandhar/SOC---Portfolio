@@ -8,7 +8,7 @@ The goal of this portfolio is to demonstrate practical blue team investigation s
 1. Windows Brute Force Attack Investigation
 2. Suspicious PowerShell Execution Analysis
 3. Phishing Email Malware Investigation
-4. Network Traffic Investigation (Wireshark)
+
 
 ## Tools Used
 
